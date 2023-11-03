@@ -1,19 +1,22 @@
 import React from 'react'
-import Header from './Header'
+// import Header from './Header'
+// import Navbar from './Navbar'
+import p1 from '../images/pic01.jpg'
+import p2 from '../images/pic02.jpg'
+import p3 from '../images/pic03.jpg'
+// import banner from '../images/banner2.jpg'
 
 const Home = () => {
   return (
     <div className="landing is-preload">
       <div id="page-wrapper">
 
-          <Header />
-
         {/* <!-- Banner --> */}
         <section id="banner">
           <h2>Axonos</h2>
-          <p>Another fine responsive site template freebie by HTML5 UP.</p>
+          <p>Spinal specialists serving the Dallas community</p>
           <ul className="actions special">
-            <li><a href="#" className="button primary">Sign Up</a></li>
+            <li><a href="#" className="button primary">Book Appointment</a></li>
             <li><a href="#" className="button">Learn More</a></li>
           </ul>
         </section>
@@ -23,15 +26,13 @@ const Home = () => {
 
           <section className="box special">
             <header className="major">
-              <h2>Introducing the ultimate mobile app
-                <img src="../images/pic03.jpg" alt="" />
-
+              <h2>Integer volutpat ante et accumsan
                 <br />
-                for doing stuff with your phone</h2>
+                commophasellus sed aliquam feugiat lorem aliquet </h2>
               <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
                 adipiscing nunc adipiscing. Condimentum turpis massa.</p>
             </header>
-            <span className="image featured"><img src="images/pic01.jpg" alt="" /></span>
+            <span className="image featured"><img src={p1} alt="" /></span>
           </section>
 
           <section className="box special features">
@@ -65,7 +66,7 @@ const Home = () => {
             <div className="col-6 col-12-narrower">
 
               <section className="box special">
-                <span className="image featured"><img src="../images/pic02.jpg" alt="" /></span>
+                <span className="image featured"><img src={p2} alt="" /></span>
                 <h3>Sed lorem adipiscing</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
                 <ul className="actions special">
@@ -77,7 +78,7 @@ const Home = () => {
             <div className="col-6 col-12-narrower">
 
               <section className="box special">
-                <span className="image featured"><img src="../images/pic03.jpg" alt="" /></span>
+                <span className="image featured"><img src={p3} alt="" /></span>
                 <h3>Accumsan integer</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
                 <ul className="actions special">
