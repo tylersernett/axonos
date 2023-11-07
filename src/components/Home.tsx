@@ -4,27 +4,22 @@ import React from 'react'
 import p1 from '../images/pic01.jpg'
 import p2 from '../images/pic02.jpg'
 import p3 from '../images/pic03.jpg'
+import Banner from './Banner'
 // import banner from '../images/banner2.jpg'
 
 const Home = () => {
   return (
-    <div className="landing is-preload">
-      <div id="page-wrapper">
+    <>
+     {/* <div className="landing is-preload"> */}
+    <div id="page-wrapper">
 
         {/* <!-- Banner --> */}
-        <section id="banner">
-          <h2>Axonos</h2>
-          <p>Spinal specialists serving the Dallas community</p>
-          <ul className="actions special">
-            <li><a href="#" className="button primary">Book Appointment</a></li>
-            <li><a href="#" className="button">Learn More</a></li>
-          </ul>
-        </section>
+        {/* <Banner /> */}
 
         {/* <!-- Main --> */}
-        <section id="main" className="container">
+        <section id="main" className="container moveup">
 
-          <section className="box special">
+          <section className="box special ">
             <header className="major">
               <h2>Integer volutpat ante et accumsan
                 <br />
