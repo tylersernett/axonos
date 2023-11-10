@@ -31,19 +31,19 @@ const Home = () => {
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
               <section>
-                <span className="icon solid major fa-chart-area accent3"></span>
+                <span className="icon solid major fa-syringe accent3"></span>
                 <h3>Ipsum dolor</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
             </div>
             <div className="features-row" style={{ marginBottom: '2em' }}>
               <section>
-                <span className="icon solid major fa-cloud accent4"></span>
+                <span className="icon solid major fa-stethoscope accent4"></span>
                 <h3>Sed feugiat</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
               <section style={{ marginBottom: '3em' }}>
-                <span className="icon solid major fa-lock accent5" ></span>
+                <span className="icon solid major fa-wheelchair accent5" ></span>
                 <h3>Enim phasellus</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
