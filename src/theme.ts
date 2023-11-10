@@ -1,7 +1,7 @@
-import { createTheme } from "@mui/material";
-import { grey, purple, teal  } from '@mui/material/colors';
+import { createTheme, responsiveFontSizes } from "@mui/material";
+import { grey, purple, teal } from '@mui/material/colors';
 
-export const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
       main: teal[500],
@@ -9,7 +9,7 @@ export const theme = createTheme({
     secondary: {
       main: purple.A200,
     },
-    mode: 'dark',
+    // mode: 'dark',
     background: {
       default: grey[900]
     }
@@ -53,3 +53,7 @@ export const theme = createTheme({
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
+
+export { theme };
