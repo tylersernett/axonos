@@ -1,39 +1,32 @@
 import React from 'react'
 // import Header from './Header'
 // import Navbar from './Navbar'
-import p1 from '../images/pic01.jpg'
+import p1 from '../images/bigspinepartial.png'
 import p2 from '../images/pic02.jpg'
 import p3 from '../images/pic03.jpg'
-import Banner from './Banner'
-// import banner from '../images/banner2.jpg'
+import { Button } from '@mui/material'
 
 const Home = () => {
   return (
     <>
-     {/* <div className="landing is-preload"> */}
-    <div id="page-wrapper">
-
-        {/* <!-- Banner --> */}
-        {/* <Banner /> */}
+      {/* <div className="landing is-preload"> */}
+      <div id="page-wrapper">
 
         {/* <!-- Main --> */}
         <section id="main" className="container moveup">
 
           <section className="box special ">
             <header className="major">
-              <h2>Integer volutpat ante et accumsan
-                <br />
-                commophasellus sed aliquam feugiat lorem aliquet </h2>
-              <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
-                adipiscing nunc adipiscing. Condimentum turpis massa.</p>
+              <h2>Integer volutpat ante et accumsan</h2>
+              <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare</p>
             </header>
-            <span className="image featured"><img src={p1} alt="" /></span>
+            <span className="image featured"><img src={p1} alt="" style={{ filter: 'grayscale(0%)', transform: 'scaleX(-1)' }} /></span>
           </section>
 
-          <section className="box special features">
-            <div className="features-row">
+          <section className="box special features" >
+            <div className="features-row" style={{ marginTop: '4em' }}>
               <section>
-                <span className="icon solid major fa-bolt accent2"></span>
+                <span className="icon solid major fa-hospital accent2"></span>
                 <h3>Magna etiam</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
@@ -43,41 +36,41 @@ const Home = () => {
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
             </div>
-            <div className="features-row">
+            <div className="features-row" style={{ marginBottom: '2em' }}>
               <section>
                 <span className="icon solid major fa-cloud accent4"></span>
                 <h3>Sed feugiat</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
-              <section>
-                <span className="icon solid major fa-lock accent5"></span>
+              <section style={{ marginBottom: '3em' }}>
+                <span className="icon solid major fa-lock accent5" ></span>
                 <h3>Enim phasellus</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
               </section>
             </div>
           </section>
 
-          <div className="row">
-            <div className="col-6 col-12-narrower">
+          <div className="row" style={{ marginTop: '2em' }} >
+            <div className="col-6 col-12-narrower" >
 
-              <section className="box special">
+              <section className="box special"  >
                 <span className="image featured"><img src={p2} alt="" /></span>
                 <h3>Sed lorem adipiscing</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
                 <ul className="actions special">
-                  <li><a href="#" className="button alt">Learn More</a></li>
+                  <li><Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>Learn More</Button></li>
                 </ul>
               </section>
 
             </div>
-            <div className="col-6 col-12-narrower">
+            <div className="col-6 col-12-narrower" >
 
               <section className="box special">
                 <span className="image featured"><img src={p3} alt="" /></span>
                 <h3>Accumsan integer</h3>
                 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-                <ul className="actions special">
-                  <li><a href="#" className="button alt">Learn More</a></li>
+                <ul className="actions special" >
+                  <li><Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>Learn More</Button></li>
                 </ul>
               </section>
 
@@ -89,7 +82,7 @@ const Home = () => {
         {/* <!-- CTA --> */}
         <section id="cta">
 
-          <h2>Sign up for beta access</h2>
+          <h2>Sign up for our mailing list</h2>
           <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
 
           <form>
@@ -105,10 +98,10 @@ const Home = () => {
 
         </section>
 
-        
 
-       </div>
-    {/* </div> */}
+
+      </div>
+      {/* </div> */}
     </>
   )
 }
