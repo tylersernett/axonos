@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, Box, Button, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 // import { Link } from 'react-router-dom'; // If you're using React Router
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 // import useMediaQuery from '../hooks/useMediaQuery';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   // const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
-  const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-
-  const handleMenuClick = (event) => {
+  const [menuAnchorEl, setMenuAnchorEl] = useState<null | HTMLElement>(null);
+  
+  const handleMenuClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setMenuAnchorEl(event.currentTarget);
   };
 
@@ -20,7 +19,7 @@ const NavBar = () => {
 
   // const navObj = [{ text: "Home", link: '/' }, { text: "About", link: '/about' }, { text: "Diagnoses & Symptoms", link: '/diagnoses' }, { text: "Procedures", link: '/procedures' }, { text: "Contact", link: '/contact' }];
   const navObj = [{ text: "Home", link: '/' }, { text: "About", link: '/about' }, { text: "Diagnoses & Procedures", link: '/procedures' }, { text: "Contact", link: '/contact' }];
-  let selectedPage = null;
+  // let selectedPage = null;
 
   const isSmallScreen = useMediaQuery('(max-width:736px)');
 

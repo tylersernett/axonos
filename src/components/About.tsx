@@ -1,5 +1,4 @@
 // import { Typography } from '@mui/material'
-import React from 'react'
 import p1 from '../images/spinefish.png'
 import headshot from '../images/headshot.jpg'
 import { Box } from '@mui/material'

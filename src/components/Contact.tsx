@@ -1,4 +1,3 @@
-import React from 'react'
 import p1 from '../images/greenmodel.png'
 import ContactForm from './ContactForm'
 

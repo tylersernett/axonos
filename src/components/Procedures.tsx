@@ -1,4 +1,3 @@
-import React from 'react'
 import p1 from '../images/multi-xray.png'
 
 const Procedures = () => {
@@ -45,22 +44,19 @@ const Procedures = () => {
   Kyphoplasty
   Regenerative Medicine Procedures`
 
-  const style = {
+  const style: React.CSSProperties = {
     whiteSpace: 'pre-line',
-    textAlign: 'left'
+    textAlign: 'left',
   };
 
-  const containerStyle = {
+  const containerStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'row',
-    // alignItems: 'left',
-    // alignItems: 'center',
   };
 
-  const columnStyle = {
+  const columnStyle: React.CSSProperties = {
     margin: '1em',
-    flexGrow: '1',
-    // textAlign: 'center',
+    flexGrow: 1,
   };
 
 
