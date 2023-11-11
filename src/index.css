@@ -331,7 +331,7 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   /* border-bottom: dotted 1px; */
-  color: #e89980;
+  color: #019688;
   text-decoration: none;
 }
 
@@ -2472,14 +2472,15 @@ input[type="radio"]+label:before {
 
 .box {
   background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 0 0 #e5e5e5;
-  margin: 0 0 2em 0;
-  padding: 3em;
+  border: 0;
+  /* border-radius: 6px; */
+  /* box-shadow: 0 2px 0 0 #e5e5e5; */
+  /* margin: 0 0 2em 0; */
+  padding: 3em 3em 0 3em;
 }
 
 .box> :last-child {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .box.alt {
@@ -2565,23 +2566,23 @@ input[type="radio"]+label:before {
 }
 
 .box .image.featured:first-child {
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
   margin-bottom: 3em;
   margin-top: -3em;
 }
 
 .box .image.featured:first-child img {
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
 }
 
 .box .image.featured:last-child {
-  border-radius: 0 0 6px 6px;
+  border-radius: 6px;
   margin-bottom: -3em;
   margin-top: 3em;
 }
 
 .box .image.featured:last-child img {
-  border-radius: 0 0 6px 6px;
+  border-radius: 6px;
 }
 
 /* Icon */
@@ -3390,7 +3391,9 @@ div.landing #page-wrapper {
 #banner {
   background-attachment: scroll, fixed;
   background-color: #666;
-  background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url("images/bigspine.jpg");
+  /* background-image: url("images/overlay.png"), url("images/bigspine.jpg"); */
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -3486,7 +3489,7 @@ div.landing #main {
 
 .moveup {
   margin-top: -17em;
-} 
+}
 
 /* Footer */
 
@@ -3538,8 +3541,11 @@ div.landing #main {
 /* CTA */
 
 #cta {
-  background: #e89980;
-  color: #f9e6df;
+  /* background: #e89980; */
+  background: #00695c;
+  /* color: #f9e6df; */
+  color: #e1f9e4;
+  /* color: #000; */
   padding: 3.5em 0 4em 0;
   text-align: center;
 }
@@ -3564,7 +3570,8 @@ div.landing #main {
 #cta .button {
   box-shadow: none;
   background: #fff;
-  color: #e89980;
+  /* color: #e89980; */
+  color: #00695c;
 }
 
 #cta input[type="text"],
@@ -3716,7 +3723,7 @@ div.landing #main {
   /* Box */
 
   .box {
-    padding: 3em 2em;
+    padding: 3em 2em 0;
   }
 
   .box.features>section {
@@ -3957,8 +3964,8 @@ div.landing #main {
 
   .box {
     margin: 1em;
-    overflow-x: hidden;
-    padding: 2em 2em !important;
+    /* overflow-x: hidden; */
+    padding: 2em 2em 0.5em !important;
   }
 
   .box.features .features-row {
@@ -4052,6 +4059,16 @@ div.landing #main {
     margin-top: -7.5em;
   }
 
+  .contact-flex {
+    flex-direction: column;
+    /* Stack elements vertically */
+  }
+
+  .contact-flex>div {
+    flex: 1;
+    /* Make both columns take equal vertical space */
+  }
+
 }
 
 /* Mobile (Portrait) */
@@ -4118,7 +4135,7 @@ div.landing #main {
     border-radius: 0;
     box-shadow: none;
     margin: 1em 0 0 0;
-    padding: 3em 1em !important;
+    padding: 3em 1em 0.5em !important;
   }
 
   .box.features .features-row section {
