@@ -2,8 +2,8 @@ import React from 'react'
 // import Header from './Header'
 // import Navbar from './Navbar'
 import p1 from '../images/bigspinepartial.png'
-import p2 from '../images/pic02.jpg'
-import p3 from '../images/pic03.jpg'
+import p2 from '../images/doctor-headless.png'
+import p3 from '../images/doctor-point.png'
 import { Button } from '@mui/material'
 
 const Home = () => {
