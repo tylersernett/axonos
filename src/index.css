@@ -3392,7 +3392,7 @@ div.landing #page-wrapper {
   background-attachment: scroll, fixed;
   background-color: #666;
   background-image:  linear-gradient(rgba(0, 0, 0, 0.6),
-  rgba(0, 0, 0, 0.6)), url("images/bigspine.jpg");
+  rgba(0, 0, 0, 0.6)), url("images/bridge.png");
   /* background-image: url("images/overlay.png"), url("images/bigspine.jpg"); */
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
