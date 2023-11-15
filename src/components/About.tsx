@@ -41,12 +41,15 @@ const About = () => {
                     He went on to complete a fellowship in Interventional Pain Management at Virginia Commonwealth University in Richmond, Virginia.
                   </p>
                   <p>
+                    Dr. Johnson serves as medical director at the Parkinson's Mind Body Institute (MIND), a non-profit serving patients with Parkinson's Disease. To learn more about the MIND program click <a href='https://www.balancetherapytoday.com/mindandbody/'>here</a>.
+                  </p>
+                  <p>
                     Dr. Johnson has interests in neuromodulation and regenerative medicine. He enjoys spending time with his wife and daughter, weight lifting, playing blues guitar, and enjoying live music.
                   </p>
                 </div>
               </div>
 
-              <div style={{ flex: '1 1 50%',}}>
+              <div style={{ flex: '1 1 50%', }}>
                 <img src={headshot} alt="" style={{ filter: 'grayscale(0%)', width: '100%', transform: 'scaleX(-1)' }} />
               </div>
 
