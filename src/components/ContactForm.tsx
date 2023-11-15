@@ -11,10 +11,12 @@ import { Typography } from '@mui/material';
 const ContactForm = () => {
   const [isSent, setIsSent] = useState(false)
   const isNonMobile = useMediaQuery("(min-width:600px)");
+  const phoneRegEx = /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/;
 
   const validationSchema = Yup.object({
     name: Yup.string().required('required'),
     email: Yup.string().email('invalid email').required('required'),
+    phone:  Yup.string().matches(phoneRegEx, 'invalid phone number'),
     subject: Yup.string().required('required'),
     message: Yup.string().required('required')
   });
@@ -23,6 +25,7 @@ const ContactForm = () => {
     initialValues: {
       name: '',
       email: '',
+      phone: '',
       subject: '',
       message: ''
     },
@@ -62,8 +65,8 @@ const ContactForm = () => {
           name='name'
           label='Name'
           fullWidth
-          margin='dense'
-          sx={{mt:'0'}}
+          margin='normal'
+          sx={{ mt: '0' }}
           variant='outlined'
           value={formik.values.name}
           onChange={formik.handleChange}
@@ -74,7 +77,7 @@ const ContactForm = () => {
           name='email'
           label='Email'
           fullWidth
-          margin='dense'
+          margin='normal'
           variant='outlined'
           value={formik.values.email}
           onChange={formik.handleChange}
@@ -82,10 +85,21 @@ const ContactForm = () => {
           helperText={formik.touched.email && formik.errors.email}
         />
         <TextField
+          name='phone'
+          label='Phone'
+          fullWidth
+          margin='normal'
+          variant='outlined'
+          value={formik.values.phone}
+          onChange={formik.handleChange}
+          error={formik.touched.phone && Boolean(formik.errors.phone)}
+          helperText={formik.touched.phone && formik.errors.phone}
+        />
+        <TextField
           name='subject'
           label='Subject'
           fullWidth
-          margin='dense'
+          margin='normal'
           variant='outlined'
           value={formik.values.subject}
           onChange={formik.handleChange}
@@ -96,7 +110,7 @@ const ContactForm = () => {
           name='message'
           label='Message'
           fullWidth
-          margin='dense'
+          margin='normal'
           multiline
           rows={4}
           variant='outlined'
@@ -109,7 +123,7 @@ const ContactForm = () => {
         <Button
           type='submit'
           variant='contained'
-          sx={{ mt: '8px' , width:'100%', '@media (max-width: 736px)': { width: '100%' }}}
+          sx={{ mt: '16px', width: '100%', '@media (max-width: 736px)': { width: '100%' } }}
           disabled={formik.isSubmitting}
           fullWidth={!isNonMobile}
         >
