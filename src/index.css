@@ -4185,4 +4185,8 @@ div.landing #main {
     margin-top: -6em;
   }
 
+  .map-frame {
+    width: 100%;
+  }
+
 }
