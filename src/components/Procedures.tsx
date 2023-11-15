@@ -66,8 +66,8 @@ const Procedures = () => {
       <section id="main" className="container moveup ">
         <section id="main" className=" box special">
           <header>
-            <h2>Procedures</h2>
-            <p>Learn more about our procedures.</p>
+            <h2>Diagnoses & Procedures</h2>
+            <p>Learn more about our diagnoses and procedures</p>
           </header>
           <div className="box">
             <span className="image featured"><img src={p1} alt="" /></span>

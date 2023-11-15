@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
   // const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
   const [menuAnchorEl, setMenuAnchorEl] = useState<null | HTMLElement>(null);
-  
+
   const handleMenuClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setMenuAnchorEl(event.currentTarget);
   };
@@ -51,8 +51,10 @@ const NavBar = () => {
           <Typography
             variant="h6"
             component="div"
+            fontFamily={'Galvji'}
+            fontWeight={'bold'}
             // sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            sx={{ flexGrow: 1, display: isSmallScreen ? 'none' : 'block' }}
+            sx={{ letterSpacing:'0.2em', flexGrow: 1, display: isSmallScreen ? 'none' : 'block' }}
           >
             AXONOS
           </Typography>
