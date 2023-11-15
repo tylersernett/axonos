@@ -17,7 +17,7 @@ const Banner = () => {
         <Typography variant='h1' color='white' fontFamily={'Galvji'} fontWeight={'bold'} sx={{letterSpacing:'0.2em'}} >AXONOS</Typography>
         <p style={axStyle}>PAIN MANAGEMENT</p>
         {/* <Typography  sx={axStyle}>PAIN MANAGEMENT</Typography> */}
-        <p>Interventional pain management specialists serving the Fort Worth community</p>
+        <p style={{marginLeft: '1em', marginRight: '1em'}}>Interventional pain management specialists serving the Fort Worth community</p>
         <Box >
           <HashLink smooth to={'/contact#contactForm'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
             <Button variant="contained" sx={{ '@media (max-width: 415px)': { width: '100%' }}}>Book Appointment</Button>
