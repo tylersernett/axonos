@@ -1,6 +1,6 @@
 // import Header from './Header'
 // import Navbar from './Navbar'
-import p1 from '../images/bigspinepartial.png'
+import p1 from '../images/drawings.png'
 import p2 from '../images/doctor-headless.png'
 import p3 from '../images/doctor-point.png'
 import { Button } from '@mui/material'
