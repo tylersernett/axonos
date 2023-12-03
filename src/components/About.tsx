@@ -1,6 +1,6 @@
 // import { Typography } from '@mui/material'
 import p1 from '../images/spinefish.png'
-import headshot from '../images/headshot.jpg'
+import headshot from '../images/riley-portrait.png'
 import { Box } from '@mui/material'
 
 const About = () => {
@@ -50,7 +50,7 @@ const About = () => {
               </div>
 
               <div style={{ flex: '1 1 50%', }}>
-                <img src={headshot} alt="" style={{ filter: 'grayscale(0%)', width: '100%', transform: 'scaleX(-1)' }} />
+                <img src={headshot} alt="" style={{ filter: 'grayscale(0%)', width: '100%', transform: 'scaleX(1)', borderRadius: '6px' }} />
               </div>
 
             </Box>
