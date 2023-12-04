@@ -1,9 +1,10 @@
 // import Header from './Header'
 // import Navbar from './Navbar'
-import p1 from '../images/bigspinepartial.png'
+import p1 from '../images/drawings.png'
 import p2 from '../images/doctor-headless.png'
 import p3 from '../images/doctor-point.png'
 import { Button } from '@mui/material'
+import { HashLink } from 'react-router-hash-link'
 
 const Home = () => {
   return (
@@ -18,7 +19,8 @@ const Home = () => {
             <header className="major">
               <h2>Welcome to Axonos</h2>
               <p>
-              Discover a path to a pain-free life with our expert team of interventional pain management specialists dedicated to serving the Fort Worth community. At Axonos, we understand that living with chronic pain can impact every aspect of your life. That's why our mission is to provide personalized and comprehensive care to help you regain control and rediscover a life without constant discomfort.                </p>
+                Discover a path to a pain-free life with our expert team of interventional pain management specialists dedicated to serving the Fort Worth community. At Axonos, we understand that living with chronic pain can impact every aspect of your life. That's why our mission is to provide personalized and comprehensive care to help you regain control and rediscover a life without constant discomfort.
+              </p>
             </header>
             <span className="image featured"><img src={p1} alt="" style={{ filter: 'grayscale(0%)', transform: 'scaleX(-1)' }} /></span>
           </section>
@@ -67,7 +69,13 @@ const Home = () => {
                   Don't let pain control your life any longer. Take the first step toward a pain-free future by scheduling a consultation with Axonos. Our interventional pain management specialists are here to partner with you on your journey to better health and improved quality of life.
                 </p>
                 <ul className="actions special">
-                  <li><Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>Learn More</Button></li>
+                  <li>
+                    <HashLink smooth to={'/contact#contactForm'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
+                      <Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>
+                        Reach Out
+                      </Button>
+                    </HashLink>
+                  </li>
                 </ul>
               </section>
 
@@ -81,7 +89,13 @@ const Home = () => {
                   Axonos is centrally located in Fort Worth, making it easy for members of our community to access the quality care they deserve. Our clinics are designed to be a welcoming space where you can receive top-notch medical attention without hassle.
                 </p>
                 <ul className="actions special" >
-                  <li><Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>Learn More</Button></li>
+                  <li>
+                    <HashLink smooth to={'/contact#offices'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
+                      <Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>
+                        View Addresses
+                      </Button>
+                    </HashLink>
+                  </li>
                 </ul>
               </section>
 

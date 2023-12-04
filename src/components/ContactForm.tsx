@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import useMediaQuery from "@mui/material/useMediaQuery";
+import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -16,7 +17,7 @@ const ContactForm = () => {
   const validationSchema = Yup.object({
     name: Yup.string().required('required'),
     email: Yup.string().email('invalid email').required('required'),
-    phone:  Yup.string().matches(phoneRegEx, 'invalid phone number'),
+    phone: Yup.string().matches(phoneRegEx, 'invalid phone number'),
     subject: Yup.string().required('required'),
     message: Yup.string().required('required')
   });
@@ -31,7 +32,7 @@ const ContactForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      fetch('https://formsubmit.co/ajax/7793f1e72a9025f1888edee332bccdef', {
+      fetch('https://formsubmit.co/ajax/20e9aaaa43edd9bd7e910cfcef8845d0', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -127,7 +128,14 @@ const ContactForm = () => {
           disabled={formik.isSubmitting}
           fullWidth={!isNonMobile}
         >
-          Submit
+          {formik.isSubmitting ? (
+            <>
+              Submitting{' '}
+              <CircularProgress size={20} thickness={5} style={{ marginLeft: '5px' }} />
+            </>
+          ) : (
+            'Submit'
+          )}
         </Button>
       </form>
 
