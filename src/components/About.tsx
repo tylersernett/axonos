@@ -35,7 +35,7 @@ const About = () => {
                     A Texas native, he attended Churchill High School in San Antonio. He earned an undergraduate degree in Civil Engineering at the University of Texas at Austin. He went on to study medicine at the University of North Texas Health Science Center in Fort Worth, where he earned a Master's Degree and his Doctorate.
                   </p>
                   <p>
-                    He completed his Physical Medicine and Rehabilitation residency training at Baylor University Medical Center in Dallas, Texas, where he was named outstanding resident of the year in his second year of training.
+                    He completed his Physical Medicine and Rehabilitation residency training at Baylor University Medical Center in Dallas, Texas, where he was named outstanding resident of the year in his second year of training. Dr. Johnson also served as chief resident at Baylor during his fourth year of residency.
                   </p>
                   <p>
                     He went on to complete a fellowship in Interventional Pain Management at Virginia Commonwealth University in Richmond, Virginia.
