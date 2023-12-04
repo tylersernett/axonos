@@ -22,7 +22,7 @@ const Contact = () => {
                 <p>
                   Phone: (817)-294-0934
                   <br />Referral Fax: (817)-210-4886
-                  <br />Open 8am–5pm Mon–Fri
+                  <br />Open Mon–Fri 8am–5pm
                   <br />Closed Sat & Sun
                 </p>
               </div>
