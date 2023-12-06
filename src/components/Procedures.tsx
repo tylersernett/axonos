@@ -39,7 +39,7 @@ const Procedures = () => {
   Sacral lateral branch block
   Peripheral nerve block
   Basivertebral nerve ablation
-  Spinal cord stimulator
+  Spinal cord stimulation (<a href='https://www.medtronic.com/us-en/patients/treatments-therapies/spinal-cord-stimulation-chronic-pain.html'>learn more</a>)
   Intrathecal pump
   Kyphoplasty
   Regenerative medicine procedures`
@@ -66,13 +66,13 @@ const Procedures = () => {
       <section id="main" className="container moveup ">
         <section id="main" className=" box special">
           <header>
-            <h2>Diagnoses & Procedures</h2>
+            <h2>Services</h2>
             <p>Learn more about our diagnoses and procedures</p>
           </header>
           <div className="box">
             <span className="image featured"><img src={p1} alt="" /></span>
             <div>
-            At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
+              At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
             </div>
             <div style={containerStyle}>
               <div style={columnStyle}>
@@ -81,7 +81,7 @@ const Procedures = () => {
               </div>
               <div style={columnStyle}>
                 <h3 style={style}>Procedures</h3>
-                <p style={style}>{procText}</p>
+                <p style={style} dangerouslySetInnerHTML={{ __html: procText }}></p>
               </div>
             </div>
 
