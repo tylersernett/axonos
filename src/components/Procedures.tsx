@@ -71,7 +71,9 @@ const Procedures = () => {
           </header>
           <div className="box">
             <span className="image featured"><img src={p1} alt="" /></span>
-
+            <div>
+            At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
+            </div>
             <div style={containerStyle}>
               <div style={columnStyle}>
                 <h3 style={style}>Diagnoses & Conditions</h3>
