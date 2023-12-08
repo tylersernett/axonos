@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   // const navObj = [{ text: "Home", link: '/' }, { text: "About", link: '/about' }, { text: "Diagnoses & Symptoms", link: '/diagnoses' }, { text: "Procedures", link: '/procedures' }, { text: "Contact", link: '/contact' }];
-  const navObj = [{ text: "Home", link: '/' }, { text: "About", link: '/about' }, { text: "Diagnoses & Procedures", link: '/procedures' }, { text: "Contact", link: '/contact' }];
+  const navObj = [{ text: "Home", link: '/' }, { text: "About", link: '/about' }, { text: "Services", link: '/procedures' }, { text: "Contact & Locations", link: '/contact' }];
   // let selectedPage = null;
 
   const isSmallScreen = useMediaQuery('(max-width:736px)');
