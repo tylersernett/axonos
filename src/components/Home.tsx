@@ -51,7 +51,7 @@ const Home = () => {
                 </p>
               </section>
               <section style={{ marginBottom: '3em' }}>
-                <span className="icon solid major fa-wheelchair accent5" ></span>
+                <span className="icon solid major fa-briefcase-medical accent5" ></span>
                 <h3>Patient-Centered Care</h3>
                 <p>Your well-being is our top priority. From the moment you walk through our doors, you'll experience a warm and compassionate environment. We take the time to listen, educate, and involve you in decisions about your care, empowering you to take an active role in your pain management journey.
                 </p>
@@ -64,7 +64,7 @@ const Home = () => {
 
               <section className="box special"  >
                 <span className="image featured"><img src={p2} alt="" /></span>
-                <h3>Enroll today</h3>
+                <h3>Contact Us Today</h3>
                 <p>
                   Don't let pain control your life any longer. Take the first step toward a pain-free future by scheduling a consultation with Axonos. Our interventional pain management specialists are here to partner with you on your journey to better health and improved quality of life.
                 </p>
@@ -84,7 +84,7 @@ const Home = () => {
 
               <section className="box special">
                 <span className="image featured"><img src={p3} alt="" /></span>
-                <h3>Two convenient locations</h3>
+                <h3>Two Convenient Locations</h3>
                 <p>
                   Axonos is centrally located in Fort Worth, making it easy for members of our community to access the quality care they deserve. Our clinics are designed to be a welcoming space where you can receive top-notch medical attention without hassle.
                 </p>
