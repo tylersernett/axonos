@@ -1,4 +1,5 @@
 import p1 from '../images/multi-xray.png'
+import machine from '../images/riley-machine.jpeg'
 
 const Procedures = () => {
   const diagText = `Osteoarthritis
@@ -71,9 +72,10 @@ const Procedures = () => {
           </header>
           <div className="box">
             <span className="image featured"><img src={p1} alt="" /></span>
-            <div>
-              At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
+            <div style={{margin:'1em'}}>
+              At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Our facilities feature state of the art technology, including C-arm guidance. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
             </div>
+
             <div style={containerStyle}>
               <div style={columnStyle}>
                 <h3 style={style}>Diagnoses & Conditions</h3>
@@ -83,6 +85,10 @@ const Procedures = () => {
                 <h3 style={style}>Procedures</h3>
                 <p style={style} dangerouslySetInnerHTML={{ __html: procText }}></p>
               </div>
+            </div>
+
+            <div style={{ flex: '1 1 50%', }}>
+              <img src={machine} alt="" style={{ filter: 'grayscale(0%)', width: '100%', transform: 'scaleX(1)', borderRadius: '6px' }} />
             </div>
 
           </div>
