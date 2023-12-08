@@ -60,7 +60,7 @@ const Home = () => {
           </section>
 
           <div className="row" style={{ marginTop: '2em' }} >
-            <div className="col-6 col-12-narrower" >
+            <div className="col-6 col-12-narrower" style={{display:'flex', flexGrow: '1'}}>
 
               <section className="box special"  >
                 <span className="image featured"><img src={p2} alt="" /></span>
@@ -80,7 +80,7 @@ const Home = () => {
               </section>
 
             </div>
-            <div className="col-6 col-12-narrower" >
+            <div className="col-6 col-12-narrower"style={{display:'flex', flexGrow: '1'}}>
 
               <section className="box special">
                 <span className="image featured"><img src={p3} alt="" /></span>
