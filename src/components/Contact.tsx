@@ -9,7 +9,7 @@ const Contact = () => {
       <section id="main" className="container moveup ">
         <section id="main" className=" box special">
           <header>
-            <h2>Contact</h2>
+            <h2>Contact & Locations</h2>
             <p>Reach out online or visit us in person</p>
           </header>
           <div className="box">
