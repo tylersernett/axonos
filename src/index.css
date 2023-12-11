@@ -339,16 +339,21 @@ a:hover {
   border-bottom-color: transparent;
 }
 
+#mobile-nav a {
+  line-height: 2.25;
+}
+
 #mobile-nav a.active {
+  /* color: #ae542e; */
   display: grid;
   grid-template-columns: 0px auto ; 
   align-items: center;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #mobile-nav a.active::before {
   content: "❙";
-  margin: 0 6px; 
+  margin: 0 -9px; 
 }
 
 strong,
