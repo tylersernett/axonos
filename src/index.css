@@ -339,6 +339,18 @@ a:hover {
   border-bottom-color: transparent;
 }
 
+#mobile-nav a.active {
+  display: grid;
+  grid-template-columns: 0px auto ; 
+  align-items: center;
+  font-weight: bold;
+}
+
+#mobile-nav a.active::before {
+  content: "❙";
+  margin: 0 6px; 
+}
+
 strong,
 b {
   color: #646464;
