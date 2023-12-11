@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, Box, Button, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-// import { Link } from 'react-router-dom'; // If you're using React Router
-// import useMediaQuery from '../hooks/useMediaQuery';
+import { theme } from '../theme';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
@@ -54,10 +53,12 @@ const NavBar = () => {
             fontFamily={'Galvji'}
             fontWeight={'bold'}
             // sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            sx={{ letterSpacing:'0.2em', flexGrow: 1, display: isSmallScreen ? 'none' : 'block' }}
+            sx={{ letterSpacing: '0.2em', flexGrow: 1, display: isSmallScreen ? 'none' : 'block' }}
           >
             AXONOS
           </Typography>
+
+          {/* DESKTOP NAVBAR */}
           <Box sx={{ display: isSmallScreen ? 'none' : 'flex' }}>
             {navObj.map((page) => (
               // <Link key={page} page={page} selectedPage={selectedPage} />
@@ -73,16 +74,27 @@ const NavBar = () => {
             ))}
           </Box>
 
+          {/* MOBILE NAV MENU */}
           <Menu
+            id='mobile-nav'
             anchorEl={menuAnchorEl}
             open={Boolean(menuAnchorEl)}
             onClose={handleMenuClose}
           >
             {navObj.map((page) => (
-              <MenuItem key={page.text} onClick={handleMenuClose}>
-                <NavLink to={page.link} tabIndex={-1}>
-                  {page.text}
-                </NavLink>
+              // <NavLink to={page.link} tabIndex={-1} >
+              //   <MenuItem key={page.text} onClick={handleMenuClose}>
+              //     {page.text}
+              //   </MenuItem>
+              // </NavLink>
+              <MenuItem
+                key={page.text}
+                onClick={handleMenuClose}
+                component={NavLink}
+                to={page.link}
+                sx={{ color: theme.palette.primary.main }}
+              >
+                {page.text}
               </MenuItem>
             ))}
           </Menu>

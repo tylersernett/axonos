@@ -70,11 +70,11 @@ const Home = () => {
                 </p>
                 <ul className="actions special">
                   <li>
-                    <HashLink smooth to={'/contact#contactForm'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
-                      <Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>
+                    {/* <HashLink smooth to={'/contact#contactForm'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}> */}
+                      <Button component={HashLink} smooth to={'/contact#contactForm'} variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>
                         Reach Out
                       </Button>
-                    </HashLink>
+                    {/* </HashLink> */}
                   </li>
                 </ul>
               </section>
@@ -90,11 +90,11 @@ const Home = () => {
                 </p>
                 <ul className="actions special" >
                   <li>
-                    <HashLink smooth to={'/contact#offices'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
-                      <Button variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>
+                    {/* <HashLink smooth to={'/contact#offices'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}> */}
+                      <Button component={HashLink} smooth to={'/contact#offices'} variant='outlined' style={{ textTransform: 'none', fontFamily: "Source Sans Pro, sans-serif", marginBottom: '1em' }}>
                         View Addresses
                       </Button>
-                    </HashLink>
+                    {/* </HashLink> */}
                   </li>
                 </ul>
               </section>

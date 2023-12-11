@@ -339,6 +339,23 @@ a:hover {
   border-bottom-color: transparent;
 }
 
+#mobile-nav a {
+  line-height: 2.25;
+}
+
+#mobile-nav a.active {
+  /* color: #ae542e; */
+  display: grid;
+  grid-template-columns: 0px auto ; 
+  align-items: center;
+  /* font-weight: bold; */
+}
+
+#mobile-nav a.active::before {
+  content: "❙";
+  margin: 0 -9px; 
+}
+
 strong,
 b {
   color: #646464;
@@ -3425,7 +3442,7 @@ div.landing #page-wrapper {
   font-size: 1.25em;
   margin-bottom: 1.75em;
 }
-
+/* 
 #banner input[type="submit"],
 #banner input[type="reset"],
 #banner input[type="button"],
@@ -3456,7 +3473,7 @@ div.landing #page-wrapper {
 #banner .button.primary {
   background: #fff;
   color: #666 !important;
-}
+} */
 
 /* Main */
 
