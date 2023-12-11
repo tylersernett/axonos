@@ -13,17 +13,15 @@ function App() {
 
   return (
     <>
-
       <BrowserRouter >
         <NavBar />
         <Banner />
         {/* <Home /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="procedures" element={<Procedures />} />
-          <Route path="contact" element={<Contact />} />
-          {/* <Route path="/create" element={<CreateNew addNew={addNew} setNotification={setNotification} />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/procedures" element={<Procedures />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>
