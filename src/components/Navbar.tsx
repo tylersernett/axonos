@@ -1,12 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, Box, Button, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { theme } from '../theme';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
-  // const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
   const [menuAnchorEl, setMenuAnchorEl] = useState<null | HTMLElement>(null);
+  const isSmallScreen = useMediaQuery('(max-width:736px)');
+
+  useEffect(() => {
+    const htmlElement = document.documentElement;
+    if (menuAnchorEl) {
+      htmlElement.style.overflow = 'hidden';
+    } else {
+      htmlElement.style.overflow = 'visible';
+    }
+
+    // Cleanup function to remove the style when the component is unmounted
+    return () => {
+      htmlElement.style.overflow = 'visible';
+    };
+  }, [menuAnchorEl]);
 
   const handleMenuClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setMenuAnchorEl(event.currentTarget);
@@ -16,11 +30,7 @@ const NavBar = () => {
     setMenuAnchorEl(null);
   };
 
-  // const navObj = [{ text: "Home", link: '/' }, { text: "About", link: '/about' }, { text: "Diagnoses & Symptoms", link: '/diagnoses' }, { text: "Procedures", link: '/procedures' }, { text: "Contact", link: '/contact' }];
   const navObj = [{ text: "Home", link: '/' }, { text: "About", link: '/about' }, { text: "Services", link: '/procedures' }, { text: "Contact & Locations", link: '/contact' }];
-  // let selectedPage = null;
-
-  const isSmallScreen = useMediaQuery('(max-width:736px)');
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -61,7 +71,6 @@ const NavBar = () => {
           {/* DESKTOP NAVBAR */}
           <Box sx={{ display: isSmallScreen ? 'none' : 'flex' }}>
             {navObj.map((page) => (
-              // <Link key={page} page={page} selectedPage={selectedPage} />
               <NavLink key={page.text} to={page.link} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
                 <Button
                   variant='contained'
@@ -80,19 +89,15 @@ const NavBar = () => {
             anchorEl={menuAnchorEl}
             open={Boolean(menuAnchorEl)}
             onClose={handleMenuClose}
+            sx={{ zIndex: '20001' }}
           >
             {navObj.map((page) => (
-              // <NavLink to={page.link} tabIndex={-1} >
-              //   <MenuItem key={page.text} onClick={handleMenuClose}>
-              //     {page.text}
-              //   </MenuItem>
-              // </NavLink>
               <MenuItem
                 key={page.text}
                 onClick={handleMenuClose}
                 component={NavLink}
                 to={page.link}
-                sx={{ color: theme.palette.primary.main }}
+                sx={{ color: theme.palette.primary.main, zIndex: '20002' }}
               >
                 {page.text}
               </MenuItem>
