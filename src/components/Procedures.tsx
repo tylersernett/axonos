@@ -1,7 +1,10 @@
+import { useMediaQuery } from '@mui/material';
 import p1 from '../images/multi-xray.png'
 import machine from '../images/riley-machine.jpeg'
 
 const Procedures = () => {
+  const isSmallScreen = useMediaQuery('(max-width:736px)');
+
   const diagText = `Osteoarthritis
   Chronic pain syndrome
   CRPS
@@ -50,9 +53,14 @@ const Procedures = () => {
     textAlign: 'left',
   };
 
+  const firstStyle: React.CSSProperties = {
+    ...style,
+    marginBottom: isSmallScreen ? '0' : '',
+  }
+
   const containerStyle: React.CSSProperties = {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: isSmallScreen ? 'column' : 'row',
   };
 
   const columnStyle: React.CSSProperties = {
@@ -79,7 +87,7 @@ const Procedures = () => {
             <div style={containerStyle}>
               <div style={columnStyle}>
                 <h3 style={style}>Diagnoses & Conditions</h3>
-                <p style={style}>{diagText}</p>
+                <p style={firstStyle}>{diagText}</p>
               </div>
               <div style={columnStyle}>
                 <h3 style={style}>Procedures</h3>

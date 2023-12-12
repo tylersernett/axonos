@@ -27,19 +27,11 @@ const Banner = () => {
         </Typography>
         <p style={subtitleStyle}>PAIN MANAGEMENT</p>
         <p style={{ marginLeft: '1em', marginRight: '1em' }}>Interventional pain management specialists serving the Fort Worth community</p>
-        <Box >
-          {/* <HashLink smooth to={'/contact#contactForm'} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
-            <Button variant="contained" sx={{ width:'185px', '@media (max-width: 480px)': { width: '100%' } }}>Book Appointment</Button>
-          </HashLink>
-          <HashLink smooth to={'/about#about'} tabIndex={-1}>
-            <Button variant="outlined" sx={{ color: 'white', borderColor: '#e5e5e5', width:'185px', '@media (max-width: 480px)': { width: '100%' } }}>
-              Learn More
-            </Button>
-          </HashLink> */}
-          <Button component={HashLink} smooth to={'/contact#contactForm'} variant="contained" sx={{ width: '185px', '@media (max-width: 480px)': { width: '100%' } }}>
+        <Box sx={{zIndex:'20000'}}>
+          <Button component={HashLink} smooth to={'/contact#contactForm'} variant="contained" sx={{ width: '185px', zIndex:'20000', '@media (max-width: 480px)': { width: '100%' } }}>
             Book Appointment
           </Button>
-          <Button component={HashLink} smooth to={'/about#about'} variant="outlined" sx={{ color: 'white', borderColor: '#e5e5e5', width: '185px', '@media (max-width: 480px)': { width: '100%' }, '&:hover': {color: '#eb7543'} }}>
+          <Button component={HashLink} smooth to={'/about#about'} variant="outlined" sx={{ color: 'white', zIndex:'20000', borderColor: '#e5e5e5', width: '185px', '@media (max-width: 480px)': { width: '100%' }, '&:hover': {color: '#eb7543'} }}>
             Learn More
           </Button>
         </Box>
