@@ -3477,8 +3477,16 @@ div.landing #page-wrapper {
 
 /* Main */
 
+.hashtitle{
+  padding-top: 62px;
+}
+
+.hashsubtitle{
+  padding-top: 62px;
+}
+
 #main {
-  padding: 4em 0;
+  padding: 0 0 4em;
 }
 
 #main>header {
