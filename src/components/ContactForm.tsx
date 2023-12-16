@@ -7,10 +7,11 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
-// import { shades } from '../theme';
+const ccEmails = import.meta.env.VITE_CC_EMAILS
 
 const ContactForm = () => {
   const [isSent, setIsSent] = useState(false)
+  const [isError, setIsError] = useState(false)
   const isNonMobile = useMediaQuery("(min-width:600px)");
   const phoneRegEx = /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/;
 
@@ -28,10 +29,16 @@ const ContactForm = () => {
       email: '',
       phone: '',
       subject: '',
-      message: ''
+      message: '',
+      _replyto: '',
+      _cc: '',
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
+      setIsError(false);
+      setIsSent(false);
+      values._replyto = values.email;
+      values._cc = `${ccEmails}`;
       fetch('https://formsubmit.co/ajax/20e9aaaa43edd9bd7e910cfcef8845d0', {
         method: 'POST',
         headers: {
@@ -54,14 +61,16 @@ const ContactForm = () => {
         })
         .catch(error => {
           console.error('There was a problem with the form submission:', error);
+          setIsError(true);
+          formik.setSubmitting(false)
         });
     },
   });
 
   return (
     <Box>
-      <h3 id='contactForm'>Email Form</h3>
-      <form onSubmit={formik.handleSubmit}>
+      <h3 id='contactForm' className='hashsubtitle'>Email Form</h3>
+      <form onSubmit={formik.handleSubmit} style={{position: 'relative', zIndex:'3'}}>
         <TextField
           name='name'
           label='Name'
@@ -124,7 +133,11 @@ const ContactForm = () => {
         <Button
           type='submit'
           variant='contained'
-          sx={{ mt: '16px', width: '100%', '@media (max-width: 736px)': { width: '100%' } }}
+          sx={{ 
+            mt: '16px', 
+            width: '100%', 
+            '@media (max-width: 736px)': { width: '100%' } 
+          }}
           disabled={formik.isSubmitting}
           fullWidth={!isNonMobile}
         >
@@ -141,10 +154,17 @@ const ContactForm = () => {
 
       {/* display the following confirmation once server response is received & isSent is true */}
       {isSent && (
-        <Typography variant="subtitle1" color="white">
-          Your message has been received!
+        <Typography variant="subtitle1" >
+          Your message has been received!&nbsp;
           <br />
           A member of our team will reach out soon.
+        </Typography>
+      )}
+      {isError && (
+        <Typography variant="subtitle1" color='red' >
+          There was an error sending your message.&nbsp;
+          <br />
+          Please try again.
         </Typography>
       )}
 

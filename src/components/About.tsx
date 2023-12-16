@@ -12,7 +12,7 @@ const About = () => {
         <section id="main" className="box special">
           {/* <section id="main" className="container"> */}
           <header>
-            <h2 id='about'>About</h2>
+            <h2 id='about' className='hashtitle'>About</h2>
             <p>Read more about our clinic and expertise</p>
           </header>
           {/* <div className="box"> */}

@@ -7,14 +7,26 @@ import Procedures from './components/Procedures'
 import Contact from './components/Contact'
 import Banner from './components/Banner'
 import Footer from './components/Footer'
+import { useEffect, useState } from 'react'
 
 
 function App() {
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
 
+  useEffect(() => {
+    const topCheck = () => {
+      setIsTopOfPage(window.scrollY === 0);
+    }
+    window.addEventListener("scroll", topCheck);
+    return () => {
+      window.removeEventListener('scroll', topCheck);
+    }
+  }, []);
   return (
+
     <>
       <BrowserRouter >
-        <NavBar />
+        <NavBar isTopOfPage={isTopOfPage} />
         <Banner />
         {/* <Home /> */}
         <Routes>
