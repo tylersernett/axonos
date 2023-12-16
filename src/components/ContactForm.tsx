@@ -69,8 +69,8 @@ const ContactForm = () => {
 
   return (
     <Box>
-      <h3 id='contactForm'>Email Form</h3>
-      <form onSubmit={formik.handleSubmit}>
+      <h3 id='contactForm' className='hashsubtitle'>Email Form</h3>
+      <form onSubmit={formik.handleSubmit} style={{position: 'relative', zIndex:'3'}}>
         <TextField
           name='name'
           label='Name'

@@ -75,7 +75,7 @@ const Procedures = () => {
       <section id="main" className="container moveup ">
         <section id="main" className=" box special">
           <header>
-            <h2>Services</h2>
+            <h2 id='services' className='hashtitle'>Services</h2>
             <p>Learn more about our diagnoses and procedures</p>
           </header>
           <div className="box">
