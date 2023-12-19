@@ -346,14 +346,14 @@ a:hover {
 #mobile-nav a.active {
   /* color: #ae542e; */
   display: grid;
-  grid-template-columns: 0px auto ; 
+  grid-template-columns: 0px auto;
   align-items: center;
   /* font-weight: bold; */
 }
 
 #mobile-nav a.active::before {
   content: "❙";
-  margin: 0 -9px; 
+  margin: 0 -9px;
 }
 
 strong,
@@ -3408,8 +3408,8 @@ div.landing #page-wrapper {
 #banner {
   background-attachment: scroll, fixed;
   background-color: #666;
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.6),
-  rgba(0, 0, 0, 0.6)), url("images/bridge.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)), url("images/bridge.png");
   /* background-image: url("images/overlay.png"), url("images/bigspine.jpg"); */
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
@@ -3442,6 +3442,7 @@ div.landing #page-wrapper {
   font-size: 1.25em;
   margin-bottom: 1.75em;
 }
+
 /* 
 #banner input[type="submit"],
 #banner input[type="reset"],
@@ -3477,11 +3478,11 @@ div.landing #page-wrapper {
 
 /* Main */
 
-.hashtitle{
+.hashtitle {
   padding-top: 62px;
 }
 
-.hashsubtitle{
+.hashsubtitle {
   padding-top: 62px;
 }
 
@@ -3560,7 +3561,7 @@ div.landing #main {
 }
 
 #footer .copyright {
-  color: #999;
+  color: #6d6d6d;
   font-size: 0.9em;
   line-height: 1em;
   margin: 2em 0 0 0;
@@ -3573,7 +3574,7 @@ div.landing #main {
 }
 
 #footer .copyright li {
-  border-left: solid 1px #dddddd;
+  border-left: solid 1px #aaaaaa;
   display: inline-block;
   list-style: none;
   margin-left: 1em;
@@ -3682,6 +3683,11 @@ div.landing #main {
 }
 
 /* Normal */
+@media screen and (max-width: 1680px) {
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-1680w.png");
+  }
+}
 
 @media screen and (max-width: 1280px) {
 
@@ -3704,6 +3710,8 @@ div.landing #main {
 
   #banner {
     background-attachment: scroll;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-1280w.png");
+
   }
 
   #banner h2 {
@@ -3723,6 +3731,10 @@ div.landing #main {
   select,
   textarea {
     font-size: 11pt;
+  }
+
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-980w.png");
   }
 
 }
@@ -3982,6 +3994,10 @@ div.landing #main {
     font-size: 11pt;
   }
 
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-736w.png");
+  }
+
   h2 {
     font-size: 1.75em;
     line-height: 1.35em;
@@ -4111,7 +4127,7 @@ div.landing #main {
     margin-top: 0;
   }
 
-  .hashtitle{
+  .hashtitle {
     padding-top: 1em;
   }
 
@@ -4164,6 +4180,10 @@ div.landing #main {
   }
 
   /* Section/Article */
+
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-480w.png");
+  }
 
   header.major {
     padding: 0;
@@ -4253,7 +4273,7 @@ div.landing #main {
     margin-top: 0;
   }
 
-  .hashtitle{
+  .hashtitle {
     padding-top: 0;
   }
 
