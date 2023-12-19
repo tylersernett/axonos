@@ -1,6 +1,4 @@
 import { useMediaQuery } from '@mui/material';
-import p1 from '../images/multi-xray.png'
-import machine from '../images/riley-machine.jpeg'
 
 const Procedures = () => {
   const isSmallScreen = useMediaQuery('(max-width:736px)');
@@ -79,8 +77,15 @@ const Procedures = () => {
             <p>Learn more about our diagnoses and procedures</p>
           </header>
           <div className="box">
-            <span className="image featured"><img src={p1} alt="" /></span>
-            <div style={{margin:'1em'}}>
+            <span className="image featured">
+              <img
+                srcSet="../src/images/multi-xray-600w.png 600w, ../src/images/multi-xray-800w.png 800w,  ../src/images/multi-xray-1200w.png 1200w, ../src/images/multi-xray-1600w.png 1600w"
+                sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
+                src="../src/images/multi-xray.png"
+                alt="Medical imagery of the lower spine"
+              />
+            </span>
+            <div style={{ margin: '1em' }}>
               At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Our facilities feature state of the art technology, including C-arm guidance. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
             </div>
 
@@ -96,7 +101,13 @@ const Procedures = () => {
             </div>
 
             <div style={{ flex: '1 1 50%', }}>
-              <img src={machine} alt="" style={{ filter: 'grayscale(0%)', width: '100%', transform: 'scaleX(1)', borderRadius: '6px' }} />
+              <img
+                srcSet="../src/images/riley-machine-600w.jpg 600w, ../src/images/riley-machine-800w.jpg 800w,  ../src/images/riley-machine-1200w.jpg 1200w, ../src/images/riley-machine-1600w.jpg 1600w"
+                sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
+                src="../src/images/riley-machine.jpeg"
+                alt="Dr. Johnson wearing dark blue scrubs standing beside a C-arm medical imaging machine"
+                style={{ width: '100%', borderRadius: '6px' }}
+              />
             </div>
 
           </div>

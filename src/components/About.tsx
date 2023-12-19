@@ -1,6 +1,3 @@
-// import { Typography } from '@mui/material'
-import p1 from '../images/spinefish.png'
-import headshot from '../images/riley-portrait.png'
 import { Box } from '@mui/material'
 
 const About = () => {
@@ -18,10 +15,12 @@ const About = () => {
           {/* <div className="box"> */}
           <div className="box" >
             <span className="image featured">
-              {/* <img src={p1} alt="" style={{ maxHeight: '290px', overflow: 'hidden'  }} /> */}
-              {/* <div style={{ overflow: 'hidden' }}> */}
-              <img src={p1} alt="" style={{ filter: 'grayscale(0%)' }} />
-              {/* </div> */}
+              <img
+                srcSet="../src/images/spinefish-600w.png 600w, ../src/images/spinefish-800w.png 800w,  ../src/images/spinefish-1200w.png 1200w, ../src/images/spinefish-1600w.png 1600w"
+                sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
+                src="../src/images/spinefish.png"
+                alt="A white and yellow medical model of the sacral region of the spine sits on a wooden surface"
+              />
             </span>
             <h3 style={{ marginBottom: '1.5em' }}>Our Physician</h3>
             <Box display={'flex'} gap={'1em'} className='contact-flex'>
@@ -50,7 +49,13 @@ const About = () => {
               </div>
 
               <div style={{ flex: '1 1 50%', }}>
-                <img src={headshot} alt="" style={{ filter: 'grayscale(0%)', width: '100%', transform: 'scaleX(1)', borderRadius: '6px' }} />
+                <img
+                  srcSet="../src/images/riley-portrait-480w.png 480w, ../src/images/riley-portrait-600w.png 600w, ../src/images/riley-portrait-736w.png 736w,  ../src/images/riley-portrait.png 911w"
+                  sizes="(max-width: 480px) 480px, (max-width: 600px) 600px, (max-width: 736px) 736px, (min-width: 737px) 911px"
+                  src="../src/images/riley-portrait.png"
+                  alt="A portrait of Dr. Johnson smiling while wearing a navy blue suit in front of the Ft. Worth skyline"
+                  style={{  width: '100%', borderRadius: '6px' }}
+                />
               </div>
 
             </Box>
