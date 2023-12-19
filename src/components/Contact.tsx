@@ -7,7 +7,7 @@ const Contact = () => {
     <div id="page-wrapper">
 
       <section id="main" className="container moveup ">
-        <section id="main" className=" box special">
+        <section id="submain" className="box special">
           <header>
             <h2 id='contact' className='hashtitle'>Contact & Locations</h2>
             <p>Reach out online or visit us in person</p>

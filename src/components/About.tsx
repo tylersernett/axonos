@@ -9,7 +9,7 @@ const About = () => {
       <section id="main" className="container moveup">
 
         {/* ??? delete "special" classname? */}
-        <section id="main" className="box special">
+        <section id="submain" className="box special">
           {/* <section id="main" className="container"> */}
           <header>
             <h2 id='about' className='hashtitle'>About</h2>
