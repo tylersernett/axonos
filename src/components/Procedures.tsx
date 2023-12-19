@@ -73,7 +73,7 @@ const Procedures = () => {
     <div id="page-wrapper">
 
       <section id="main" className="container moveup ">
-        <section id="main" className=" box special">
+        <section id="submain" className="box special">
           <header>
             <h2 id='services' className='hashtitle'>Services</h2>
             <p>Learn more about our diagnoses and procedures</p>
