@@ -3479,11 +3479,14 @@ div.landing #page-wrapper {
 /* Main */
 
 .hashtitle {
-  padding-top: 62px;
+  scroll-margin-top: 82px;
+  /* padding-top: 62px; */
+  /* margin-top:62px; */
 }
 
 .hashsubtitle {
-  padding-top: 62px;
+  scroll-margin-top: 3.5em;
+  /* padding-top: 62px; */
 }
 
 #main {
@@ -4128,7 +4131,9 @@ div.landing #main {
   }
 
   .hashtitle {
-    padding-top: 1em;
+    /* padding-top: 1em; */
+    scroll-margin-top: 0.75em;
+
   }
 
   /* Footer */
@@ -4187,6 +4192,10 @@ div.landing #main {
 
   header.major {
     padding: 0;
+  }
+
+  .hashsubtitle {
+    scroll-margin-top: 1em;
   }
 
   /* List */

@@ -5,15 +5,11 @@ const About = () => {
     <div id="page-wrapper">
       <section id="main" className="container moveup">
 
-        {/* ??? delete "special" classname? */}
-        <section id="submain" className="box special">
-          {/* <section id="main" className="container"> */}
-          <header>
+        <section  className="box special">
+          <header className='major'>
             <h2 id='about' className='hashtitle'>About</h2>
             <p>Read more about our clinic and expertise</p>
           </header>
-          {/* <div className="box"> */}
-          <div className="box" >
             <span className="image featured">
               <img
                 srcSet="../src/images/spinefish-600w.png 600w, ../src/images/spinefish-800w.png 800w,  ../src/images/spinefish-1200w.png 1200w, ../src/images/spinefish-1600w.png 1600w"
@@ -22,6 +18,8 @@ const About = () => {
                 alt="A white and yellow medical model of the sacral region of the spine sits on a wooden surface"
               />
             </span>
+            <div className="box" >
+
             <h3 style={{ marginBottom: '1.5em' }}>Our Physician</h3>
             <Box display={'flex'} gap={'1em'} className='contact-flex'>
 

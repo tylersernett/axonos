@@ -71,12 +71,11 @@ const Procedures = () => {
     <div id="page-wrapper">
 
       <section id="main" className="container moveup ">
-        <section id="submain" className="box special">
-          <header>
+        <section  className="box special">
+          <header className='major'>
             <h2 id='services' className='hashtitle'>Services</h2>
             <p>Learn more about our diagnoses and procedures</p>
           </header>
-          <div className="box">
             <span className="image featured">
               <img
                 srcSet="../src/images/multi-xray-600w.png 600w, ../src/images/multi-xray-800w.png 800w,  ../src/images/multi-xray-1200w.png 1200w, ../src/images/multi-xray-1600w.png 1600w"
@@ -85,7 +84,9 @@ const Procedures = () => {
                 alt="Medical imagery of the lower spine"
               />
             </span>
-            <div style={{ margin: '1em' }}>
+            <div className="box alt" >
+
+            <div style={{ margin: '1em', textAlign:'left' }}>
               At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Our facilities feature state of the art technology, including C-arm guidance. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
             </div>
 
@@ -106,7 +107,7 @@ const Procedures = () => {
                 sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
                 src="../src/images/riley-machine.jpeg"
                 alt="Dr. Johnson wearing dark blue scrubs standing beside a C-arm medical imaging machine"
-                style={{ width: '100%', borderRadius: '6px' }}
+                style={{ width: '100%', borderRadius: '6px', marginBottom: isSmallScreen ? '0' : '2em', }}
               />
             </div>
 
