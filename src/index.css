@@ -3512,6 +3512,29 @@ div.landing #main {
   margin-top: -14em;
 }
 
+#submain {
+  padding: 0 0 4em;
+}
+
+#submain>header {
+  text-align: center;
+  margin: 0 0 3em 0;
+}
+
+#submain>header h2 {
+  font-size: 2.75em;
+  margin: 0;
+}
+
+#submain>header p {
+  border-top: solid 2px #e5e5e5;
+  color: #777;
+  display: inline-block;
+  font-style: normal;
+  margin: 1em 0 0 0;
+  padding: 1em 0 1.25em 0;
+}
+
 .moveup {
   margin-top: -17em;
 }
@@ -4066,6 +4089,32 @@ div.landing #main {
     margin-top: 0;
   }
 
+  #submain {
+    padding: 4em 0 0 0;
+  }
+
+  #submain>header {
+    margin: 0 2em 1.5em 2em;
+  }
+
+  #submain>header h2 {
+    font-size: 2em;
+  }
+
+  #submain>header p {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+
+  div.landing #submain {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .hashtitle{
+    padding-top: 1em;
+  }
+
   /* Footer */
 
   #footer {
@@ -4198,6 +4247,14 @@ div.landing #main {
 
   #main>.box:first-child {
     margin-top: 0;
+  }
+
+  #submain>.box:first-child {
+    margin-top: 0;
+  }
+
+  .hashtitle{
+    padding-top: 0;
   }
 
   /* CTA */
