@@ -41,7 +41,7 @@ const Procedures = () => {
   Sacral lateral branch block
   Peripheral nerve block
   Basivertebral nerve ablation
-  Spinal cord stimulation (<a href='https://www.medtronic.com/us-en/patients/treatments-therapies/spinal-cord-stimulation-chronic-pain.html'>learn more</a>)
+  <a href='https://www.medtronic.com/us-en/patients/treatments-therapies/spinal-cord-stimulation-chronic-pain.html'>Spinal cord stimulation</a>
   Intrathecal pump
   Kyphoplasty
   Regenerative medicine procedures`
