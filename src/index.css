@@ -4200,7 +4200,7 @@ div.landing #main {
   }
 
   .hashsubtitle {
-    scroll-margin-top: 1em;
+    scroll-margin-top: 0;
   }
 
   /* List */
