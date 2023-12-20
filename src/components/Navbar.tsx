@@ -83,13 +83,17 @@ const NavBar: React.FC<NavBarProps> = ({ isTopOfPage }) => {
           </Typography>
 
           {/* DESKTOP NAVBAR */}
-          <Box sx={{ display: isSmallScreen ? 'none' : 'flex' }}>
+          <Box id='desktop-nav' sx={{ display: isSmallScreen ? 'none' : 'flex' }}>
             {navObj.map((page) => (
-              <NavHashLink smooth key={page.text} to={page.link} style={{ textDecoration: 'none', color: 'white' }} tabIndex={-1}>
+              <NavHashLink smooth key={page.text} to={page.link} tabIndex={-1}>
                 <Button
                   variant='contained'
                   onClick={handleMenuClose} //to ensure scroll doesn't get locked if user transitions from small to large window
-                  sx={{ color: 'white', backgroundColor: 'transparent', boxShadow: 'none' }}
+                  sx={{
+                    color: 'white',
+                    backgroundColor: 'transparent',
+                    boxShadow: 'none',
+                  }}
                 >
                   {page.text}
                 </Button>

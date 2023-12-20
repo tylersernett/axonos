@@ -317,7 +317,7 @@ body,
 input,
 select,
 textarea {
-  color: #777;
+  color: #767676;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16pt;
   font-weight: 300;
@@ -346,14 +346,19 @@ a:hover {
 #mobile-nav a.active {
   /* color: #ae542e; */
   display: grid;
-  grid-template-columns: 0px auto ; 
+  grid-template-columns: 0px auto;
   align-items: center;
   /* font-weight: bold; */
 }
 
 #mobile-nav a.active::before {
   content: "❙";
-  margin: 0 -9px; 
+  margin: 0 -9px;
+}
+
+#desktop-nav a.active>button {
+  text-underline-offset: 4px;
+  text-decoration: underline;
 }
 
 strong,
@@ -2294,7 +2299,7 @@ header.major h2 {
 header.major p {
   display: inline-block;
   border-top: solid 2px #e5e5e5;
-  color: #777;
+  color: #767676;
   margin: 1.5em 0 0 0;
   padding: 1.5em 0 0 0;
   font-style: normal;
@@ -2362,7 +2367,7 @@ select {
 }
 
 select option {
-  color: #777;
+  color: #767676;
   background-color: #f5f5f5;
 }
 
@@ -2402,7 +2407,7 @@ input[type="radio"] {
 input[type="checkbox"]+label,
 input[type="radio"]+label {
   text-decoration: none;
-  color: #777;
+  color: #767676;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -3059,7 +3064,7 @@ input[type="button"].alt,
 .button.alt {
   background-color: transparent;
   box-shadow: inset 0 0 0 2px #e5e5e5;
-  color: #777;
+  color: #767676;
 }
 
 input[type="submit"].alt:hover,
@@ -3113,7 +3118,7 @@ input[type="button"].disabled,
 input[type="button"]:disabled,
 .button.disabled,
 .button:disabled {
-  background-color: #777 !important;
+  background-color: #767676 !important;
   box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
   color: #f5f5f5 !important;
   cursor: default;
@@ -3408,8 +3413,8 @@ div.landing #page-wrapper {
 #banner {
   background-attachment: scroll, fixed;
   background-color: #666;
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.6),
-  rgba(0, 0, 0, 0.6)), url("images/bridge.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)), url("images/bridge.png");
   /* background-image: url("images/overlay.png"), url("images/bigspine.jpg"); */
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
@@ -3442,6 +3447,7 @@ div.landing #page-wrapper {
   font-size: 1.25em;
   margin-bottom: 1.75em;
 }
+
 /* 
 #banner input[type="submit"],
 #banner input[type="reset"],
@@ -3477,12 +3483,15 @@ div.landing #page-wrapper {
 
 /* Main */
 
-.hashtitle{
-  padding-top: 62px;
+.hashtitle {
+  scroll-margin-top: 82px;
+  /* padding-top: 62px; */
+  /* margin-top:62px; */
 }
 
-.hashsubtitle{
-  padding-top: 62px;
+.hashsubtitle {
+  scroll-margin-top: 3.5em;
+  /* padding-top: 62px; */
 }
 
 #main {
@@ -3501,7 +3510,7 @@ div.landing #page-wrapper {
 
 #main>header p {
   border-top: solid 2px #e5e5e5;
-  color: #777;
+  color: #767676;
   display: inline-block;
   font-style: normal;
   margin: 1em 0 0 0;
@@ -3528,7 +3537,7 @@ div.landing #main {
 
 #submain>header p {
   border-top: solid 2px #e5e5e5;
-  color: #777;
+  color: #767676;
   display: inline-block;
   font-style: normal;
   margin: 1em 0 0 0;
@@ -3560,7 +3569,7 @@ div.landing #main {
 }
 
 #footer .copyright {
-  color: #999;
+  color: #6d6d6d;
   font-size: 0.9em;
   line-height: 1em;
   margin: 2em 0 0 0;
@@ -3573,7 +3582,7 @@ div.landing #main {
 }
 
 #footer .copyright li {
-  border-left: solid 1px #dddddd;
+  border-left: solid 1px #aaaaaa;
   display: inline-block;
   list-style: none;
   margin-left: 1em;
@@ -3682,6 +3691,11 @@ div.landing #main {
 }
 
 /* Normal */
+@media screen and (max-width: 1680px) {
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-1680w.png");
+  }
+}
 
 @media screen and (max-width: 1280px) {
 
@@ -3704,6 +3718,8 @@ div.landing #main {
 
   #banner {
     background-attachment: scroll;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-1280w.png");
+
   }
 
   #banner h2 {
@@ -3723,6 +3739,10 @@ div.landing #main {
   select,
   textarea {
     font-size: 11pt;
+  }
+
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-980w.png");
   }
 
 }
@@ -3982,6 +4002,10 @@ div.landing #main {
     font-size: 11pt;
   }
 
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-736w.png");
+  }
+
   h2 {
     font-size: 1.75em;
     line-height: 1.35em;
@@ -4111,8 +4135,10 @@ div.landing #main {
     margin-top: 0;
   }
 
-  .hashtitle{
-    padding-top: 1em;
+  .hashtitle {
+    /* padding-top: 1em; */
+    scroll-margin-top: 0.75em;
+
   }
 
   /* Footer */
@@ -4165,8 +4191,16 @@ div.landing #main {
 
   /* Section/Article */
 
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-480w.png");
+  }
+
   header.major {
     padding: 0;
+  }
+
+  .hashsubtitle {
+    scroll-margin-top: 1em;
   }
 
   /* List */
@@ -4253,7 +4287,7 @@ div.landing #main {
     margin-top: 0;
   }
 
-  .hashtitle{
+  .hashtitle {
     padding-top: 0;
   }
 
