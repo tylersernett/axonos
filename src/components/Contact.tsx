@@ -13,9 +13,9 @@ const Contact = () => {
           </header>
           <span className="image featured">
             <img
-              srcSet="../src/images/greenmodel-600w.png 600w, ../src/images/greenmodel-800w.png 800w,  ../src/images/greenmodel-1200w.png 1200w, ../src/images/greenmodel-1600w.png 1600w"
+              srcSet="/images/greenmodel-600w.png 600w, /images/greenmodel-800w.png 800w,  /images/greenmodel-1200w.png 1200w, /images/greenmodel-1600w.png 1600w"
               sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-              src="../src/images/greenmodel-1600w.png"
+              src="/images/greenmodel-1600w.png"
               alt="A medical model of a spine and ribcage set against a turquoise background"
               style={{ filter: 'grayscale(30%)' }}
             />

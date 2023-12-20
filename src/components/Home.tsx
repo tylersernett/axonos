@@ -21,9 +21,9 @@ const Home = () => {
             </header>
             <span className="image featured">
               <img
-                srcSet="../src/images/drawings-600w.png 600w, ../src/images/drawings-800w.png 800w,  ../src/images/drawings-1200w.png 1200w, ../src/images/drawings-1600w.png 1600w"
+                srcSet="/images/drawings-600w.png 600w, /images/drawings-800w.png 800w,  /images/drawings-1200w.png 1200w, /images/drawings-1600w.png 1600w"
                 sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                src="../src/images/drawings.png"
+                src="/images/drawings.png"
                 alt="Drawings of the bones in the foot, hand, and spine"
               />
             </span>
@@ -69,9 +69,9 @@ const Home = () => {
               <section className="box special"  >
                 <span className="image featured">
                   <img
-                    srcSet="../src/images/doctor-headless-600w.png 600w, ../src/images/doctor-headless-800w.png 800w,  ../src/images/doctor-headless-1200w.png 1200w, ../src/images/doctor-headless-1600w.png 1600w"
+                    srcSet="/images/doctor-headless-600w.png 600w, /images/doctor-headless-800w.png 800w,  /images/doctor-headless-1200w.png 1200w, /images/doctor-headless-1600w.png 1600w"
                     sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                    src="../src/images/doctor-headless.png"
+                    src="/images/doctor-headless.png"
                     alt="A doctor and patient sit adjacent to one another in a clinic"
                   />
                 </span>
@@ -96,9 +96,9 @@ const Home = () => {
               <section className="box special">
                 <span className="image featured">
                   <img
-                    srcSet="../src/images/doctor-point-600w.png 600w, ../src/images/doctor-point-800w.png 800w,  ../src/images/doctor-point-1200w.png 1200w, ../src/images/doctor-point-1600w.png 1600w"
+                    srcSet="/images/doctor-point-600w.png 600w, /images/doctor-point-800w.png 800w,  /images/doctor-point-1200w.png 1200w, /images/doctor-point-1600w.png 1600w"
                     sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                    src="../src/images/doctor-point.png"
+                    src="/images/doctor-point.png"
                     alt="A doctor points at various medical imagery of a brain and spine"
                   />
                 </span>
