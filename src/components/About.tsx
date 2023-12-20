@@ -12,9 +12,9 @@ const About = () => {
           </header>
             <span className="image featured">
               <img
-                srcSet="../src/images/spinefish-600w.png 600w, ../src/images/spinefish-800w.png 800w,  ../src/images/spinefish-1200w.png 1200w, ../src/images/spinefish-1600w.png 1600w"
+                srcSet="/images/spinefish-600w.png 600w, /images/spinefish-800w.png 800w,  /images/spinefish-1200w.png 1200w, /images/spinefish-1600w.png 1600w"
                 sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                src="../src/images/spinefish.png"
+                src="/images/spinefish.png"
                 alt="A white and yellow medical model of the sacral region of the spine sits on a wooden surface"
               />
             </span>
@@ -48,9 +48,9 @@ const About = () => {
 
               <div style={{ flex: '1 1 50%', }}>
                 <img
-                  srcSet="../src/images/riley-portrait-480w.png 480w, ../src/images/riley-portrait-600w.png 600w, ../src/images/riley-portrait-736w.png 736w,  ../src/images/riley-portrait.png 911w"
+                  srcSet="/images/riley-portrait-480w.png 480w, /images/riley-portrait-600w.png 600w, /images/riley-portrait-736w.png 736w,  /images/riley-portrait.png 911w"
                   sizes="(max-width: 480px) 480px, (max-width: 600px) 600px, (max-width: 736px) 736px, (min-width: 737px) 911px"
-                  src="../src/images/riley-portrait.png"
+                  src="/images/riley-portrait.png"
                   alt="A portrait of Dr. Johnson smiling while wearing a navy blue suit in front of the Ft. Worth skyline"
                   style={{  width: '100%', borderRadius: '6px' }}
                 />

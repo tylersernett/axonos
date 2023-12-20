@@ -3414,7 +3414,7 @@ div.landing #page-wrapper {
   background-attachment: scroll, fixed;
   background-color: #666;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)), url("images/bridge.png");
+      rgba(0, 0, 0, 0.6)), url("/images/bridge.png");
   /* background-image: url("images/overlay.png"), url("images/bigspine.jpg"); */
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
@@ -3693,7 +3693,7 @@ div.landing #main {
 /* Normal */
 @media screen and (max-width: 1680px) {
   #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-1680w.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bridge-1680w.png");
   }
 }
 
@@ -3718,7 +3718,7 @@ div.landing #main {
 
   #banner {
     background-attachment: scroll;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-1280w.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bridge-1280w.png");
 
   }
 
@@ -3742,7 +3742,7 @@ div.landing #main {
   }
 
   #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-980w.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bridge-980w.png");
   }
 
 }
@@ -4003,7 +4003,7 @@ div.landing #main {
   }
 
   #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-736w.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bridge-736w.png");
   }
 
   h2 {
@@ -4192,7 +4192,7 @@ div.landing #main {
   /* Section/Article */
 
   #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/bridge-480w.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bridge-480w.png");
   }
 
   header.major {

@@ -78,9 +78,9 @@ const Procedures = () => {
           </header>
             <span className="image featured">
               <img
-                srcSet="../src/images/multi-xray-600w.png 600w, ../src/images/multi-xray-800w.png 800w,  ../src/images/multi-xray-1200w.png 1200w, ../src/images/multi-xray-1600w.png 1600w"
+                srcSet="/images/multi-xray-600w.png 600w, /images/multi-xray-800w.png 800w,  /images/multi-xray-1200w.png 1200w, /images/multi-xray-1600w.png 1600w"
                 sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                src="../src/images/multi-xray.png"
+                src="/images/multi-xray.png"
                 alt="Medical imagery of the lower spine"
               />
             </span>
@@ -103,9 +103,9 @@ const Procedures = () => {
 
             <div style={{ flex: '1 1 50%', }}>
               <img
-                srcSet="../src/images/riley-machine-600w.jpg 600w, ../src/images/riley-machine-800w.jpg 800w,  ../src/images/riley-machine-1200w.jpg 1200w, ../src/images/riley-machine-1600w.jpg 1600w"
+                srcSet="/images/riley-machine-600w.jpg 600w, /images/riley-machine-800w.jpg 800w,  /images/riley-machine-1200w.jpg 1200w, /images/riley-machine-1600w.jpg 1600w"
                 sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                src="../src/images/riley-machine.jpeg"
+                src="/images/riley-machine.jpeg"
                 alt="Dr. Johnson wearing dark blue scrubs standing beside a C-arm medical imaging machine"
                 style={{ width: '100%', borderRadius: '6px', marginBottom: isSmallScreen ? '0' : '2em', }}
               />
