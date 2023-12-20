@@ -356,6 +356,11 @@ a:hover {
   margin: 0 -9px;
 }
 
+#desktop-nav a.active>button {
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
 strong,
 b {
   color: #646464;
