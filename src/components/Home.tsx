@@ -39,7 +39,7 @@ const Home = () => {
                 </p>
               </section>
               <section>
-                <span className="icon solid major fa-syringe accent3"></span>
+                <span className="icon solid major fa-heartbeat accent3"></span>
                 <h3>Cutting-Edge Treatments</h3>
                 <p>
                   Benefit from the latest advancements in interventional pain management. Our clinic offers a range of minimally invasive procedures, injections, and therapies designed to target and alleviate pain at its source, promoting faster recovery and long-term relief.
