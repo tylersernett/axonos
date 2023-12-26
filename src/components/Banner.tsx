@@ -32,7 +32,7 @@ const Banner = () => {
             Book Appointment
           </Button>
           <Button component={HashLink} smooth to={'/about#about'} variant="outlined" sx={{ color: 'white', zIndex: '20000', borderColor: '#e5e5e5', width: '185px', '@media (max-width: 480px)': { width: '100%' }, '&:hover': { color: '#eb7543' } }}>
-            Learn More
+            About Us
           </Button>
         </Box>
       </section>
