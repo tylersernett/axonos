@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private/
+
+sitemap: https://axonosmedical.com/sitemap.xml
