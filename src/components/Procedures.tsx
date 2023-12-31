@@ -83,8 +83,8 @@ const Procedures = () => {
                 alt="Medical imagery of the lower spine"
               />
             </span>
-            <div className="box alt" >
-
+            <div className="box" >
+            <h3 style={{ marginBottom: '1.5em' }}>Our Mission</h3>
             <div style={{ margin: '1em', textAlign:'left' }}>
               At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Our facilities feature state of the art technology, including C-arm guidance. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
             </div>
