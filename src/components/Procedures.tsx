@@ -41,7 +41,7 @@ const Procedures = () => {
   Sacral lateral branch block
   Peripheral nerve block
   Basivertebral nerve ablation
-  <a href='https://www.medtronic.com/us-en/patients/treatments-therapies/spinal-cord-stimulation-chronic-pain.html'>Spinal cord stimulation</a>
+  <a href='https://www.medtronic.com/us-en/patients/treatments-therapies/spinal-cord-stimulation-chronic-pain.html' style='text-decoration: underline;'>Spinal cord stimulation</a>
   Intrathecal pump
   Kyphoplasty
   Regenerative medicine procedures`
@@ -62,7 +62,7 @@ const Procedures = () => {
   };
 
   const columnStyle: React.CSSProperties = {
-    margin: '1em',
+    margin: '1em 0',
     flexGrow: 1,
   };
 
@@ -79,14 +79,13 @@ const Procedures = () => {
             <span className="image featured">
               <img
                 srcSet="/images/multi-xray-600w.png 600w, /images/multi-xray-800w.png 800w,  /images/multi-xray-1200w.png 1200w, /images/multi-xray-1600w.png 1600w"
-                sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                src="/images/multi-xray.png"
+                sizes="(min-width: 1700px) 1280px, (min-width: 1300px) 1040px, (min-width: 1020px) 880px, (min-width: 740px) calc(81.92vw + 61px), (min-width: 400px) calc(90.94vw + 36px), calc(75vw + 95px)"                src="/images/multi-xray.png"
                 alt="Medical imagery of the lower spine"
               />
             </span>
-            <div className="box alt" >
-
-            <div style={{ margin: '1em', textAlign:'left' }}>
+            <div className="box" >
+            <h3 style={{ marginBottom: '1.5em' }}>Our Mission</h3>
+            <div style={{ margin: '0 0 1em 0', textAlign:'left' }}>
               At Axonos, we are committed to ensuring you have access to the information you need to make informed decisions about your health. Our facilities feature state of the art technology, including C-arm guidance. Whether you're seeking insights into your diagnosis or exploring treatment options, we're here to guide you through your medical journey. If you have any questions or would like to schedule a consultation, please don't hesitate to contact us. Your well-being is our priority.
             </div>
 
@@ -104,8 +103,7 @@ const Procedures = () => {
             <div style={{ flex: '1 1 50%', }}>
               <img
                 srcSet="/images/riley-machine-600w.jpg 600w, /images/riley-machine-800w.jpg 800w,  /images/riley-machine-1200w.jpg 1200w, /images/riley-machine-1600w.jpg 1600w"
-                sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-                src="/images/riley-machine.jpeg"
+                sizes="(min-width: 1700px) 1152px, (min-width: 1300px) 936px, (min-width: 1020px) 792px, (min-width: 740px) calc(70.77vw + 84px), (min-width: 500px) calc(100vw - 88px), (min-width: 380px) calc(100vw - 29px), calc(66.67vw + 91px)"                src="/images/riley-machine.jpeg"
                 alt="Dr. Johnson wearing dark blue scrubs standing beside a C-arm medical imaging machine"
                 style={{ width: '100%', borderRadius: '6px', marginBottom: isSmallScreen ? '0' : '2em', }}
               />

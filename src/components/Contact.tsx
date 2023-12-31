@@ -14,8 +14,7 @@ const Contact = () => {
           <span className="image featured">
             <img
               srcSet="/images/greenmodel-600w.png 600w, /images/greenmodel-800w.png 800w,  /images/greenmodel-1200w.png 1200w, /images/greenmodel-1600w.png 1600w"
-              sizes="(max-width: 600px) 600px, (max-width: 800px) 800px,  (max-width: 1200px) 1200px, (min-width: 1201px) 1600px"
-              src="/images/greenmodel-1600w.png"
+              sizes="(min-width: 1700px) 1280px, (min-width: 1300px) 1040px, (min-width: 1020px) 880px, (min-width: 740px) calc(81.92vw + 61px), (min-width: 400px) calc(90.94vw + 36px), calc(75vw + 95px)"              src="/images/greenmodel-1600w.png"
               alt="A medical model of a spine and ribcage set against a turquoise background"
               style={{ filter: 'grayscale(30%)' }}
             />
@@ -38,7 +37,7 @@ const Contact = () => {
               <hr />
               <div style={{ flex: '1 1 50%', margin: '1em' }}>
                 <h3 id='offices' className='hashsubtitle'>Offices</h3>
-                <iframe className='map-frame' width='100%' height='300px' style={{ border: 0, minHeight: '300px' }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8849963541834!2d-97.328424!3d32.742244299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e711294d5df0b%3A0x6f937f80b9ee35a3!2s209%20St%20Louis%20Ave%20%23100%2C%20Fort%20Worth%2C%20TX%2076104!5e0!3m2!1sen!2sus!4v1699201243834!5m2!1sen!2sus" ></iframe>
+                <iframe className='map-frame' title="209 St Louis Ave Map" width='100%' height='300px' style={{ border: 0, minHeight: '300px' }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.8849963541834!2d-97.328424!3d32.742244299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e711294d5df0b%3A0x6f937f80b9ee35a3!2s209%20St%20Louis%20Ave%20%23100%2C%20Fort%20Worth%2C%20TX%2076104!5e0!3m2!1sen!2sus!4v1699201243834!5m2!1sen!2sus" ></iframe>
                 <p>209 St Louis Ave #100
                   <br />Fort Worth, TX 76104
 
@@ -48,7 +47,7 @@ const Contact = () => {
                   <hr style={{ flex: '0 1 50%' }} />
                 </Box>
 
-                <iframe className='map-frame' width='100%' height='300px' style={{ border: 0, minHeight: '300px' }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.685483082773!2d-97.40201859999999!3d32.64119819999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6d04767614cb%3A0x57a67969b4a835ba!2s7148%20Trail%20Lake%20Dr%2C%20Fort%20Worth%2C%20TX%2076123!5e0!3m2!1sen!2sus!4v1700027485087!5m2!1sen!2sus" ></iframe>
+                <iframe className='map-frame' title="7148 Trail Lake Dr Map" width='100%' height='300px' style={{ border: 0, minHeight: '300px' }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.685483082773!2d-97.40201859999999!3d32.64119819999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6d04767614cb%3A0x57a67969b4a835ba!2s7148%20Trail%20Lake%20Dr%2C%20Fort%20Worth%2C%20TX%2076123!5e0!3m2!1sen!2sus!4v1700027485087!5m2!1sen!2sus" ></iframe>
                 <p>7148 Trail Lake Dr
                   <br />Ft. Worth, TX 76123
                 </p>
