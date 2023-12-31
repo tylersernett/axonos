@@ -38,7 +38,7 @@ const About = () => {
                     He went on to complete a fellowship in Interventional Pain Management at Virginia Commonwealth University in Richmond, Virginia.
                   </p>
                   <p>
-                    Dr. Johnson serves as medical director at the Parkinson's <a href='https://www.balancetherapytoday.com/mindandbody/'>Mind Body Institute (MIND)</a>, a non-profit serving patients with Parkinson's Disease.
+                    Dr. Johnson serves as medical director at the Parkinson's <a href='https://www.balancetherapytoday.com/mindandbody/' style={{textDecoration:'underline'}}>Mind Body Institute (MIND)</a>, a non-profit serving patients with Parkinson's Disease.
                   </p>
                   <p>
                     Dr. Johnson has interests in neuromodulation and regenerative medicine. He enjoys spending time with his wife and daughter, weight lifting, playing blues guitar, and enjoying live music.
