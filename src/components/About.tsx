@@ -5,19 +5,19 @@ const About = () => {
     <div id="page-wrapper">
       <section id="main" className="container moveup">
 
-        <section  className="box special">
+        <section className="box special">
           <header className='major'>
             <h2 id='about' className='hashtitle'>About</h2>
             <p>Read more about our clinic and expertise</p>
           </header>
-            <span className="image featured">
-              <img
-                srcSet="/images/spinefish-600w.png 600w, /images/spinefish-800w.png 800w,  /images/spinefish-1200w.png 1200w, /images/spinefish-1600w.png 1600w"
-                sizes="(min-width: 1700px) 1280px, (min-width: 1300px) 1040px, (min-width: 1020px) 880px, (min-width: 740px) calc(81.92vw + 61px), (min-width: 400px) calc(90.94vw + 36px), calc(75vw + 95px)"                src="/images/spinefish.png"
-                alt="A white and yellow medical model of the sacral region of the spine sits on a wooden surface"
-              />
-            </span>
-            <div className="box" >
+          <span className="image featured">
+            <img
+              srcSet="/images/spinefish-600w.png 600w, /images/spinefish-800w.png 800w,  /images/spinefish-1200w.png 1200w, /images/spinefish-1600w.png 1600w"
+              sizes="(min-width: 1700px) 1280px, (min-width: 1300px) 1040px, (min-width: 1020px) 880px, (min-width: 740px) calc(81.92vw + 61px), (min-width: 400px) calc(90.94vw + 36px), calc(75vw + 95px)" src="/images/spinefish.png"
+              alt="A white and yellow medical model of the sacral region of the spine sits on a wooden surface"
+            />
+          </span>
+          <div className="box" >
 
             <h3 style={{ marginBottom: '1.5em' }}>Our Physician</h3>
             <Box display={'flex'} gap={'1em'} className='contact-flex'>
@@ -51,9 +51,17 @@ const About = () => {
               <div style={{ flex: '1 1 50%', }}>
                 <img
                   srcSet="/images/riley-portrait-480w.png 480w, /images/riley-portrait-600w.png 600w, /images/riley-portrait-736w.png 736w,  /images/riley-portrait.png 911w"
-                  sizes="(min-width: 1700px) 501px, (min-width: 1300px) 407px, (min-width: 1020px) 345px, (min-width: 860px) 33.57vw, (min-width: 740px) calc(50vw - 103px), (min-width: 500px) calc(100vw - 176px), (min-width: 360px) calc(100vw - 59px), calc(50vw + 111px)"                  src="/images/riley-portrait.png"
+                  sizes="(min-width: 1700px) 501px, (min-width: 1300px) 407px, (min-width: 1020px) 345px, (min-width: 860px) 33.57vw, (min-width: 740px) calc(50vw - 103px), (min-width: 500px) calc(100vw - 176px), (min-width: 360px) calc(100vw - 59px), calc(50vw + 111px)"
+                  src="/images/riley-portrait.png"
                   alt="A portrait of Dr. Johnson smiling while wearing a navy blue suit in front of the Ft. Worth skyline"
-                  style={{  width: '100%', borderRadius: '6px' }}
+                  style={{ width: '100%', borderRadius: '6px' }}
+                />
+                <img
+                  // sizes="(max-width: 830px) 100vw, 830px"
+                  // srcSet="abpmr-rust-830w_lp1ukl_c_scale,w_200.png 200w, abpmr-rust-830w_lp1ukl_c_scale,w_431.png 431w, abpmr-rust-830w_lp1ukl_c_scale,w_830.png 830w"
+                  src="/images/abpmr-rust-830w.png"
+                  alt="A circular logo for the American Board of Physical Medicine and Rehabilitation. The center contains a Rod of Asclepius flanked by two olive branches."
+                  style={{ width: '100%', marginTop: '1em', marginBottom: '1em'  }}
                 />
               </div>
 
