@@ -25,3 +25,20 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+1. hero carosel?
+2. lock bar to top / ID when y=0
+
+Needs:
+1. headshot
+2. phone #
+3. email to forward to
+4. do you want email mailing list?
+4. Any other "copy" you want added to site
+5. Social Media Links - twitter, facebook, instagram
+6. separate pages for diagnoses & procedures? or combined?
+
+move the mobile menu outside the app bar??? to fix zindex issues
+
+images:
+https://www.responsivebreakpoints.com/
