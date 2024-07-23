@@ -13,7 +13,9 @@ const Footer = () => {
         <li><a href="#" className="icon brands fa-google-plus"><span className="label">Google+</span></a></li> 
       </ul> */}
       <ul className="copyright">
-        <li>&copy; Axonos. All rights reserved.</li><li className="icons"><a href="https://www.linkedin.com/in/riley-johnson-06aa963/" className="icon brands fa-linkedin"><span className="label">LinkedIn</span></a></li><li>Design: <a href="https://tylersernett.github.io/">Tyler Johnson</a> & <a href="http://html5up.net">HTML5 UP</a></li>
+        <li className="icons"><a href="https://www.linkedin.com/company/axonos-medical/" className="icon brands fa-linkedin"><span className="label">LinkedIn</span></a></li>
+        <li>&copy; Axonos. All rights reserved.</li>
+        <li>Design: <a href="https://tylersernett.github.io/">Tyler Johnson</a> & <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
     </footer>
   )
