@@ -40,7 +40,7 @@ const About = () => {
                     Dr. Johnson serves as medical director at the Parkinson's <a href='https://www.balancetherapytoday.com/mindandbody/' style={{ textDecoration: 'underline' }}>Mind Body Institute (MIND)</a>, a non-profit serving patients with Parkinson's Disease.
                   </p>
                   <p>
-                    Dr. Johnson is a Diplomate of the American Board of Physical Medicine & Rehabilitation.
+                    Dr. Johnson is a Diplomate of the <a href='https://www.abpmr.org/' style={{ textDecoration: 'underline' }}>American Board of Physical Medicine & Rehabilitation</a>.
                   </p>
                   <p>
                     Dr. Johnson has interests in neuromodulation and regenerative medicine. He enjoys spending time with his wife and daughter, weight lifting, playing blues guitar, and enjoying live music.
