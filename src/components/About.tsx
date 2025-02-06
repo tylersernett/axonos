@@ -40,7 +40,10 @@ const About = () => {
                     Dr. Johnson serves as medical director at the Parkinson's <a href='https://www.balancetherapytoday.com/mindandbody/' style={{ textDecoration: 'underline' }}>Mind Body Institute (MIND)</a>, a non-profit serving patients with Parkinson's Disease.
                   </p>
                   <p>
-                    Dr. Johnson is a Diplomate of the <a href='https://www.abpmr.org/' style={{ textDecoration: 'underline' }}>American Board of Physical Medicine & Rehabilitation</a>.
+                    Dr. Johnson is a Diplomate of the <a href='https://www.abpmr.org/' style={{ textDecoration: 'underline' }}>American Board of Physical Medicine & Rehabilitation</a>. He is board certified in Physical Medicine and Rehabilitation and Pain Medicine.
+                  </p>
+                  <p>
+                    He is Adjunct Professor in the Department of Medical Education at University of North Texas Health Science Center.
                   </p>
                   <p>
                     Dr. Johnson has interests in neuromodulation and regenerative medicine. He enjoys spending time with his wife and daughter, weight lifting, playing blues guitar, and enjoying live music.
@@ -61,7 +64,7 @@ const About = () => {
                   // srcSet="abpmr-rust-830w_lp1ukl_c_scale,w_200.png 200w, abpmr-rust-830w_lp1ukl_c_scale,w_431.png 431w, abpmr-rust-830w_lp1ukl_c_scale,w_830.png 830w"
                   src="/images/abpmr-rust-830w.png"
                   alt="A circular logo for the American Board of Physical Medicine and Rehabilitation. The center contains a Rod of Asclepius flanked by two olive branches."
-                  style={{ width: '100%', marginTop: '1em', marginBottom: '1em'  }}
+                  style={{ width: '100%', marginTop: '1em', marginBottom: '1em' }}
                 />
               </div>
 
