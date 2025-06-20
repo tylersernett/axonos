@@ -43,6 +43,9 @@ const About = () => {
                     Dr. Johnson is a Diplomate of the <a href='https://www.abpmr.org/' style={{ textDecoration: 'underline' }}>American Board of Physical Medicine & Rehabilitation</a>. He is board certified in Physical Medicine and Rehabilitation and Pain Medicine.
                   </p>
                   <p>
+                    Fort Worth Magazine selected Dr. Johnson for their list of <a href='https://fwtx.com/top-doctor-2025' style={{ textDecoration: 'underline' }}>Top Doctors 2025</a>.
+                  </p>
+                  <p>
                     He is Adjunct Professor in the Department of Medical Education at University of North Texas Health Science Center.
                   </p>
                   <p>
@@ -63,6 +66,13 @@ const About = () => {
                   // sizes="(max-width: 830px) 100vw, 830px"
                   // srcSet="abpmr-rust-830w_lp1ukl_c_scale,w_200.png 200w, abpmr-rust-830w_lp1ukl_c_scale,w_431.png 431w, abpmr-rust-830w_lp1ukl_c_scale,w_830.png 830w"
                   src="/images/abpmr-rust-830w.png"
+                  alt="A circular logo for the American Board of Physical Medicine and Rehabilitation. The center contains a Rod of Asclepius flanked by two olive branches."
+                  style={{ width: '100%', marginTop: '1em', marginBottom: '1em' }}
+                />
+                <img
+                  // sizes="(max-width: 830px) 100vw, 830px"
+                  // srcSet="abpmr-rust-830w_lp1ukl_c_scale,w_200.png 200w, abpmr-rust-830w_lp1ukl_c_scale,w_431.png 431w, abpmr-rust-830w_lp1ukl_c_scale,w_830.png 830w"
+                  src="/images/TopDoctors-2025-orange-w_830.png"
                   alt="A circular logo for the American Board of Physical Medicine and Rehabilitation. The center contains a Rod of Asclepius flanked by two olive branches."
                   style={{ width: '100%', marginTop: '1em', marginBottom: '1em' }}
                 />
